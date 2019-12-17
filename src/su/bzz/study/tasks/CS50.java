@@ -1,3 +1,5 @@
+package su.bzz.study.tasks;
+
 import java.util.Scanner;
 
 public class CS50 {
