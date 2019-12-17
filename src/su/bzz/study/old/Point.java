@@ -1,4 +1,5 @@
-import java.util.Arrays;
+package su.bzz.study.old;
+
 import java.util.Scanner;
 
 public class Point {
@@ -158,7 +159,7 @@ class Circle {
 //class Treug {
 //    Treug() {
 //        System.out.println("Задайте центр окружности");
-//        c = new Point();
+//        c = new su.bzz.study.old.Point();
 //        c.pointScanner();
 //        boolean err;
 //        do {
@@ -184,7 +185,7 @@ class Circle {
 //
 
 
-//   class Point implements Cloneable {
+//   class su.bzz.study.old.Point implements Cloneable {
 //    public double x; // абсцисса точки
 //    public double y; // ордината точки
 //
@@ -207,7 +208,7 @@ class Circle {
 //        y = b;
 //    }
 //    // конструктор по умолчанию, создающий точку в начале координат
-//    public Point() {
+//    public su.bzz.study.old.Point() {
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("enter x");
 //
@@ -220,16 +221,16 @@ class Circle {
 //
 //    }
 //    // конструктор, создающий точку с указанными координатами
-//    public Point(double a, double b) {
+//    public su.bzz.study.old.Point(double a, double b) {
 //        x = a;
 //        y = b;
 //    }
 //    // метод вычисляющий расстояние между точками
-//    public double length(Point p) {
+//    public double length(su.bzz.study.old.Point p) {
 //        return Math.sqrt( Math.pow(p.x-x,2) + Math.pow(p.y-y,2) );
 //    }
 //    // метод проверяющий совпадают ли точки
-//    public boolean equalsPoint(Point p) {
+//    public boolean equalsPoint(su.bzz.study.old.Point p) {
 //        if(this.x == p.x && this.y == p.y) {
 //            return true;
 //        } else {
@@ -246,7 +247,7 @@ class Circle {
 
 
 // круги
-//class Circle {
+//class su.bzz.study.old.Circle {
 //    public double x; // абсцисса центра
 //    public double y; // ордината центра
 //    public double r; // радиус
@@ -261,7 +262,7 @@ class Circle {
 //    public void zoomCircle(double r) {
 //        this.r = this.r * r;
 //    }
-//    public Circle() {
+//    public su.bzz.study.old.Circle() {
 //        System.out.println("press x");
 //        if (sc.hasNextDouble()) {
 //            x = sc.nextDouble();
@@ -272,7 +273,7 @@ class Circle {
 //            printCircle();
 //        } else System.out.println("Вы ввели что-то не то");
 //    }
-//    public Circle(double a, double b, double s) {
+//    public su.bzz.study.old.Circle(double a, double b, double s) {
 //        x = a;
 //        y = b;
 //        r = s;
@@ -283,7 +284,7 @@ class Circle {
 //        return s;
 //    }
 //    // метод проверяющий равны ли окружности по площадям
-//    public boolean equalsCircle(Circle cir) {
+//    public boolean equalsCircle(su.bzz.study.old.Circle cir) {
 //        if(this.squareCircle() == cir.squareCircle()) {
 //            return true;
 //        } else {
@@ -298,7 +299,7 @@ class Circle {
 //        this.x = Math.random()*199-99;
 //        this.y = Math.random()*199-99;
 //    }
-//    public void way (Circle opp){
+//    public void way (su.bzz.study.old.Circle opp){
 //        double way33 = Math.sqrt(Math.)
 //    }
 //}
