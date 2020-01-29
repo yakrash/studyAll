@@ -12,12 +12,14 @@ public class CodeSignal {
         int sizeWord = picture[0].length() + 2;
 
         for (int i = 0; i < sizeArray; i++) {
-            if (i == 0 || i == sizeArray - 1) {
-                for (int j = 0; j < sizeWord; j++) {
+
+            if (i == 0 || i == sizeArray - 1){
+               for (int j = 0; j < sizeWord - 1; j++) {
                     result[i] += "*";
-                }
+                } continue;
             }
-            StringBuilder word = new StringBuilder(picture[i - 1]);
+            result[i] = "*" + picture[i-1] + "*";
+
         }
         for (int k=0; k < result.length; k++) {
             System.out.println(result[k]);
