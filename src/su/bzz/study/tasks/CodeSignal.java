@@ -2,9 +2,31 @@ package su.bzz.study.tasks;
 
 public class CodeSignal {
 
-
     public static void main(String[] args) {
-        System.out.println(1);
+        String inputString = "(abc)d(efg)";
+        StringBuilder str = new StringBuilder (inputString);
+        int finish = 0;
+        while(finish == 0){
+            finish = 1;
+            int inxLeft = -1;
+            int inxRight = -1;
+            for (int i = 0; i < str.length(); i++){
+
+                if (str.charAt(i) == '(') {
+                    inxLeft = i; //continiu
+                }
+                if (str.charAt(i) == ')') {
+                    inxRight = i;
+                    StringBuilder buf = new StringBuilder (str.substring(inxLeft+1, inxRight));
+                    buf.reverse();
+                    str.delete(inxLeft, inxRight+1);
+                    str.insert(inxLeft, buf);
+                    finish = 0;
+                    break;
+                }
+            }
+        }
+        System.out.println(str.toString());
     }
 }
 
