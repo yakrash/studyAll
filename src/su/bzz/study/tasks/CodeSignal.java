@@ -1,34 +1,63 @@
 package su.bzz.study.tasks;
 
+import java.util.Arrays;
+
 public class CodeSignal {
 
     public static void main(String[] args) {
-        String inputString = "(abc)d(efg)";
-        StringBuilder str = new StringBuilder (inputString);
-        int finish = 0;
-        while(finish == 0){
-            finish = 1;
-            int inxLeft = -1;
-            int inxRight = -1;
-            for (int i = 0; i < str.length(); i++){
+        String[] picture = {"abc", "ded"};
+        int sizeArray = picture.length + 2;
+        String[] result = new String [sizeArray];
+        Arrays.fill(result, "*");
+        int sizeWord = picture[0].length() + 2;
 
-                if (str.charAt(i) == '(') {
-                    inxLeft = i; //continiu
-                }
-                if (str.charAt(i) == ')') {
-                    inxRight = i;
-                    StringBuilder buf = new StringBuilder (str.substring(inxLeft+1, inxRight));
-                    buf.reverse();
-                    str.delete(inxLeft, inxRight+1);
-                    str.insert(inxLeft, buf);
-                    finish = 0;
-                    break;
+        for (int i = 0; i < sizeArray; i++) {
+            if (i == 0 || i == sizeArray - 1) {
+                for (int j = 0; j < sizeWord; j++) {
+                    result[i] += "*";
                 }
             }
+            StringBuilder word = new StringBuilder(picture[i - 1]);
         }
-        System.out.println(str.toString());
+        for (int k=0; k < result.length; k++) {
+            System.out.println(result[k]);
+        }
     }
 }
+
+
+
+
+
+//   (abc)d(efg)
+//    String inputString = "(abc)d(efg)";
+//    StringBuilder str = new StringBuilder (inputString);
+//    int finish = 0;
+//        while(finish == 0){
+//                finish = 1;
+//                int inxLeft = -1;
+//                int inxRight = -1;
+//                for (int i = 0; i < str.length(); i++){
+//
+//        if (str.charAt(i) == '(') {
+//        inxLeft = i;
+//        continue;
+//        }
+//        if (str.charAt(i) == ')') {
+//        inxRight = i;
+//        StringBuilder buf = new StringBuilder (str.substring(inxLeft+1, inxRight));
+//        buf.reverse();
+//        str.delete(inxLeft, inxRight+1);
+//        str.insert(inxLeft, buf);
+//        finish = 0;
+//        break;
+//        }
+//        }
+//        }
+//        System.out.println(str.toString());
+
+
+
 
 
 //        public String printTextPerRole(String[] roles, String[] textLines) {
