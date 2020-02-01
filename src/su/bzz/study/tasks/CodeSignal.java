@@ -5,31 +5,73 @@ import java.util.Arrays;
 public class CodeSignal {
 
     public static void main(String[] args) {
-        String[] picture = {"abc", "ded"};
-        int sizeArray = picture.length + 2;
-        String[] result = new String [sizeArray];
-        Arrays.fill(result, "*");
-        int sizeWord = picture[0].length() + 2;
 
-        for (int i = 0; i < sizeArray; i++) {
 
-            if (i == 0 || i == sizeArray - 1){
-               for (int j = 0; j < sizeWord - 1; j++) {
-                    result[i] += "*";
-                } continue;
-            }
-            result[i] = "*" + picture[i-1] + "*";
+    }
+}
 
-        }
-        for (int k=0; k < result.length; k++) {
-            System.out.println(result[k]);
-        }
+        // Given a string, find out if its characters can be rearranged to form a palindrome.
+//        String inputString = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbcccc";
+//        int []countChar = new int[26];
+//
+//        for(int i=0; i<inputString.length(); i++)
+//            countChar[inputString.charAt(i)-97]++;
+//
+//        for (int d : countChar)
+//            System.out.print(d + " ");
+//
+//        int chek=0;
+//        for(int i=0; i<countChar.length; i++)
+//            if(countChar[i]%2!=0) {
+//                chek++;
+//            }
+//        System.out.println(chek<=1);
+
+
+//
+//        char[] change = inputString.toCharArray();
+//        Arrays.sort(change);
+//        char[] pal = new char[change.length];
+//        for (int i = 0, k = 0, j = change.length - 1; i < change.length; i++){
+//            if(i % 2 == 0) {
+//                pal[k] =change[i];
+//                k++;
+//            }
+//            if(i % 2 != 0){
+//                pal[j] = change[i];
+//                j--;
+//            }
+//        }
+//        String sortPal = String.valueOf(pal);
+//        System.out.println(sortPal);
+//        StringBuilder result = new StringBuilder (sortPal);
+//
+//        System.out.println(result.reverse().toString().equals(sortPal));
+
     }
 }
 
 
-
-
+//      border
+//    String[] picture = {"abc", "ded"};
+//    int sizeArray = picture.length + 2;
+//    String[] result = new String [sizeArray];
+//        Arrays.fill(result, "*");
+//                int sizeWord = picture[0].length() + 2;
+//
+//                for (int i = 0; i < sizeArray; i++) {
+//
+//        if (i == 0 || i == sizeArray - 1){
+//        for (int j = 0; j < sizeWord - 1; j++) {
+//        result[i] += "*";
+//        } continue;
+//        }
+//        result[i] = "*" + picture[i-1] + "*";
+//
+//        }
+//        for (int k=0; k < result.length; k++) {
+//        System.out.println(result[k]);
+//        }
 
 //   (abc)d(efg)
 //    String inputString = "(abc)d(efg)";
