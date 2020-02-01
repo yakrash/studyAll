@@ -6,7 +6,6 @@ public class CodeSignal {
 
     public static void main(String[] args) {
 
-
     }
 }
 
