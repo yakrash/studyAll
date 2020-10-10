@@ -47,9 +47,6 @@ public class CodeSignal {
 //
 //        System.out.println(result.reverse().toString().equals(sortPal));
 
-    }
-}
-
 
 //      border
 //    String[] picture = {"abc", "ded"};
