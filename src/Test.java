@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 public class Test {
 
     public static void main(String[] args) {
-
+            int y;
         int x = 5;
         int y = x*2;
         double z = x/2 + y;
