@@ -5,7 +5,18 @@ import java.util.Arrays;
 public class CodeSignal {
 
     public static void main(String[] args) {
+        String inputString = "192.168.1.0";
+        String[] ipv = inputString.split("\\.");
+        int[] ipvInt = new int[4];
+        for (int i = 0; i < ipv.length; i++){
+            ipvInt[i] = Integer.parseInt(ipv[i]);
+        }
+        for (int i :
+                ipvInt) {
+            if (i < 0 && i > 255) return false;
+        }
 
+        System.out.println(Arrays.toString(ipvInt));
     }
 }
 
