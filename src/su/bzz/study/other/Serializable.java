@@ -17,7 +17,7 @@ public class Serializable {
 
 
         try (ObjectOutput output = new ObjectOutputStream(new FileOutputStream(FILE_NAME));
-             ObjectInput input = new ObjectInputStream(new FileInputStream(FILE_NAME));) {
+             ObjectInput input = new ObjectInputStream(new FileInputStream(FILE_NAME))) {
 
             output.writeObject(map);
 
