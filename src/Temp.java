@@ -1,21 +1,49 @@
-import com.sun.source.tree.Tree;
-
-import java.util.*;
-import java.util.function.BiFunction;
-import java.util.function.BiPredicate;
-import java.util.function.Consumer;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 
-public class Test {
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+public class Temp {
 
     public static void main(String[] args) {
-            int y;
-        int x = 5;
-        int y = x*2;
-        double z = x/2 + y;
-        System.out.println(z);
+
+//
+//        String ACCESS_TOKEN = "sl.AkJtOEB57e3IqP28ZzfaW07UAcsKisYmFMs1r0yi3SrTj2hAxFcnqMMgp1benXPwBW8abMCXuqSV3xQ9_jvwE8VTw2TxuN4w5ZDLe4yT0uiotW34jdFp0RfCRUe40_6wZd-_6-8";
+//
+//        DbxRequestConfig config = DbxRequestConfig.newBuilder("dropbox/java-tutorial")
+//                .build();
+//        DbxClientV2 client = new DbxClientV2(config, ACCESS_TOKEN);
+//
+//        JavaSoundRecorder javaSoundRecorder = new JavaSoundRecorder(client);
+//        javaSoundRecorder.recordAudio(5000);
+
+//
+//        try {
+//            InputStream in = new FileInputStream
+//                    ("c:/Users/USER/Downloads/Telegram Desktop" +
+//                            "/capture_20201023122711333.jpg");
+//            client.files().uploadBuilder("/test2.jpg")
+//                    .uploadAndFinish(in);
+//        } catch(Exception e){
+//            e.printStackTrace();
+//        }
+    }
+}
+
+
+
+
+
+
+
+//            int y;
+//        int x = 5;
+//        int y = x*2;
+//        double z = x/2 + y;
+//        System.out.println(z);
 
        /* User user = new User();
         user.email = "testEmail";
@@ -29,17 +57,17 @@ public class Test {
                     .map(u -> "Hi " + u.name)
                     .orElse("Hi guest"));
         });*/
-    }
 
-
-}
-
-class User {
-    String name;
-    String email;
-}
 
 //
+//}
+//
+//class User {
+//    String name;
+//    String email;
+//}
+//
+////
 //    public List<FinancialTransaction> transactionsMerger = new ArrayList<>();
 //
 //    public static void main(String[] args) {

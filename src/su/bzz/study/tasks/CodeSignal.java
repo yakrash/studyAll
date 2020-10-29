@@ -1,24 +1,24 @@
-package su.bzz.study.tasks;
-
-import java.util.Arrays;
-
-public class CodeSignal {
-
-    public static void main(String[] args) {
-        String inputString = "192.168.1.0";
-        String[] ipv = inputString.split("\\.");
-        int[] ipvInt = new int[4];
-        for (int i = 0; i < ipv.length; i++){
-            ipvInt[i] = Integer.parseInt(ipv[i]);
-        }
-        for (int i :
-                ipvInt) {
-            if (i < 0 && i > 255) return false;
-        }
-
-        System.out.println(Arrays.toString(ipvInt));
-    }
-}
+//package su.bzz.study.tasks;
+//
+//import java.util.Arrays;
+//
+//public class CodeSignal {
+//
+//    public static void main(String[] args) {
+//        String inputString = "192.168.1.0";
+//        String[] ipv = inputString.split("\\.");
+//        int[] ipvInt = new int[4];
+//        for (int i = 0; i < ipv.length; i++){
+//            ipvInt[i] = Integer.parseInt(ipv[i]);
+//        }
+//        for (int i :
+//                ipvInt) {
+//            if (i < 0 && i > 255) return false;
+//        }
+//
+//        System.out.println(Arrays.toString(ipvInt));
+//    }
+//}
 
         // Given a string, find out if its characters can be rearranged to form a palindrome.
 //        String inputString = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbcccc";
