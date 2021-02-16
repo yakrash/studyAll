@@ -1,3 +1,52 @@
+// --------------- регулярные выражения --------------------
+//
+//public class Test{
+//
+//    public static void main(String args[]) {
+//        String a1 = "172.16.254.1";
+//        String a2 = "64.233.161.00";
+//        String a3 = "0.254.255.0";
+//        System.out.println(isIPv4Address(a3));
+//        System.out.println("1".matches("[12]\\d\\d|[1-9]\\d|[0-9]"));
+//
+//
+//    }
+//    boolean isIPv4Address(String inputString) {
+//        if (inputString == null) return false;
+//
+//        String reg = "(1\\d\\d|25[0-5]|2[0-4][0-9]|[1-9]\\d|[0-9])";
+//        String regex =  "^" + reg + "\\." + reg + "\\." + reg + "\\."  + reg +"$";
+//
+//        if (!inputString.matches(regex)){
+//            return false;
+//        }
+//
+//        return true;
+//    }
+//}
+//
+//class TestParent{
+//    private List<Integer> list;
+//
+//    public TestParent(List<Integer> list) {
+//        this.list = List.copyOf(list);
+//    }
+//
+//    public List<Integer> getList() {
+//        return list;
+//    }
+//}
+
+//_--------------------------------------------------
+
+
+
+
+
+
+
+
+
 //package su.bzz.study.tasks;
 //
 //import java.util.Arrays;
