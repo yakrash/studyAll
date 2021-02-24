@@ -1,4 +1,4 @@
-package su.bzz.study.tasks;
+package su.bzz.study.hyperSkill;
 
 import java.util.*;
 

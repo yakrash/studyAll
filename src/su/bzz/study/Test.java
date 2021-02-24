@@ -1,31 +1,36 @@
 package su.bzz.study;
 
-import java.util.Arrays;
-import java.util.Scanner;
+    import java.util.Scanner;
 
 public class Test {
 
     public static void main(String args[]) {
 
         Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
-        System.out.print(num + " ");
-        while (num != 1) {
-            if (num % 2 == 0) {
-                num /= 2;
-            } else {
-                num = num * 3 + 1;
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int[][] arr = new int[n][m];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                arr[i][j] = sc.nextInt();
             }
-            System.out.print(num + " ");
         }
-        long lo = Integer.MAX_VALUE; // (1)
-        int i = (int) lo; // (2)
-        System.out.println(i);
-        char ch = (char) i; // (3)
-        System.out.println(ch);
-        double d = ch; // (4)
-        System.out.println(d);
-        float f = (float) d; // (5)
+        int firstColumns = sc.nextInt();
+        int secondColumns = sc.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            int temp;
+            temp = arr[i][firstColumns];
+            arr[i][firstColumns] = arr[i][secondColumns];
+            arr[i][secondColumns] = temp;
+        }
+
+        for (int[] arr2 : arr) {
+            for (int num : arr2) {
+                System.out.print(num + " ");
+            }
+            System.out.println("");
+        }
     }
 }
 
