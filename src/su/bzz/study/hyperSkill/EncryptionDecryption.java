@@ -5,19 +5,36 @@ import java.util.Scanner;
 public class EncryptionDecryption {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        String whatDo = sc.nextLine();
         String message = sc.nextLine();
         int key = sc.nextInt();
+        if ("enc".equals(whatDo)) {
+            System.out.println(doEnc(message, key));
+        } else {
+            System.out.println(doDec(message, key));
+        }
+    }
+
+    static String doDec(String message, int key) {
         String cypherText = "";
-        String alphabet = "abcdefghijklmnopqrstuvwxyz";
 
         for (int i = 0; i < message.length(); i++) {
             char ch = message.charAt(i);
-            if (Character.isLetter(ch)) {
-                ch = alphabet.charAt((alphabet.indexOf(ch) + key) % 26);
-            }
+            ch = (char) (ch - key);
             cypherText += ch;
         }
-        System.out.println(cypherText);
+        return cypherText;
+    }
+
+    static String doEnc(String message, int key) {
+        String cypherText = "";
+
+        for (int i = 0; i < message.length(); i++) {
+            char ch = message.charAt(i);
+            ch = (char) (ch + key);
+            cypherText += ch;
+        }
+        return cypherText;
     }
 }
 

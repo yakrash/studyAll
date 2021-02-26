@@ -4,7 +4,63 @@ import java.util.Scanner;
 
 public class MatrixDemi {
     public static void main(String[] args) {
+        for (String s : args) {
+            System.out.println(s);
+        }
 
+    }
+}
+// 22 min
+class Test {
+    public static void toDo() {
+        Scanner sc = new Scanner(System.in);
+        String string = sc.nextLine();
+        while (!"0".equals(string)) {
+            try {
+                System.out.println(Integer.parseInt(string) * 10);
+            } catch (RuntimeException e){
+                System.out.println("Invalid user input: " + string);
+            } finally {
+                string = sc.nextLine();
+            }
+        }
+
+    }
+}
+
+
+class CheckTwoNum {
+    public static void toDo() {
+        Scanner sc = new Scanner(System.in);
+        int length = sc.nextInt();
+        int n;
+        int m;
+        boolean flag = false;
+        int[] arr = new int[length];
+        for (int i = 0; i < length; i++) {
+            arr[i] = sc.nextInt();
+        }
+        n = sc.nextInt();
+        m = sc.nextInt();
+
+        for (int i = 0; i < length - 1; i++) {
+            if ((arr[i] == n && arr[i + 1] == m) || (arr[i] == m && arr[i + 1] == n)) {
+                flag = true;
+                break;
+            }
+        }
+        System.out.println(flag);
+    }
+}
+
+/*
+3
+1 3 2
+2 3
+ */
+
+class MatrixSym {
+    public static void toDo() {
         Scanner sc = new Scanner(System.in);
         String allNum = sc.nextLine();
         int countColumns = allNum.split(" ").length;
@@ -49,13 +105,14 @@ public class MatrixDemi {
             }
             System.out.println();
         }
-
     }
 }
-//9 5 3
-//0 7 -1
-//-5 2 9
-//end
+/*
+9 5 3
+0 7 -1
+-5 2 9
+end
+*/
 // --------------------------------------------------------
 //    Scanner sc = new Scanner(System.in);
 //    int n = sc.nextInt();

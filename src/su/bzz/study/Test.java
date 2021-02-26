@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class Test {
 
     public static void main(String args[]) {
-        String text = "Hello";
-        char ch = 'g';
-        text += ch;
-        System.out.println(text);
+        int mode = 10;
+
+        System.out.println(mode++);
+
     }
 }
 // https://target.com/index.html?pass=12345&port=8080&cookie=&host=localhost
