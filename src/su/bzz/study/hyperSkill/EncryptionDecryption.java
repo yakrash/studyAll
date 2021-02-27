@@ -1,14 +1,32 @@
 package su.bzz.study.hyperSkill;
 
 import java.util.Scanner;
-
+// try catch
 public class EncryptionDecryption {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String whatDo = sc.nextLine();
-        String message = sc.nextLine();
-        int key = sc.nextInt();
-        if ("enc".equals(whatDo)) {
+        String mode = "enc";
+        String message = "";
+        int key = 0;
+
+        for (int i = 0; i < args.length; i++) {
+            if (i % 2 == 0) {
+                switch (args[i]) {
+                    case "-mode":
+                        mode = args[i + 1];
+                        break;
+                    case "-key":
+                        key = Integer.parseInt(args[i + 1]);
+                        break;
+                    case  "-data":
+                        message = args[i + 1];
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+
+        if ("enc".equals(mode)) {
             System.out.println(doEnc(message, key));
         } else {
             System.out.println(doDec(message, key));
