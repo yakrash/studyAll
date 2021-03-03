@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MatrixDemi {
     public static void main(String[] args) {
-
+        FindFirstMax.toDo();
     }
 }
 // 22 min
@@ -25,6 +25,24 @@ class Test {
     }
 }
 
+class FindFirstMax {
+    public static void toDo() {
+        Scanner sc = new Scanner(System.in);
+        int length = sc.nextInt();
+        int[] arr = new int[length];
+        int maxIndex = 0;
+        int maxNum = Integer.MIN_VALUE;
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+            if (maxNum < arr[i]) {
+                maxIndex = i;
+                maxNum = arr[i];
+            }
+        }
+        System.out.println(maxIndex);
+    }
+}
 
 class CheckTwoNum {
     public static void toDo() {
