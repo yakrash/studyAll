@@ -1,32 +1,36 @@
 package su.bzz.study.hyperSkill;
 
-    import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.stream.Stream;
 
 public class MatrixDemi {
     public static void main(String[] args) {
         Test.toDo();
     }
 }
+
 // 22 min
 class Test {
+
     public static void toDo() {
-        Scanner sc = new Scanner(System.in);
-        int length = sc.nextInt();
-        int[] arr = new int[length];
-        boolean flag = true;
-
-        for (int i = 0; i < length; i++) {
-            arr[i] = sc.nextInt();
+        String path = "src/su/bzz/study/hyperSkill/dataset_91022.txt";
+        File file = new File(path);
+        int[] numArray;
+        try (Scanner sc = new Scanner(file)) {
+            numArray = Stream.of(sc.nextLine()
+                    .split(" "))
+                    .mapToInt(Integer::parseInt)
+                    .filter(num -> num >= 9999)
+                    .toArray();
+            System.out.println(numArray.length);
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found: " + e.getMessage());
         }
-        int n = sc.nextInt();
-        int m = sc.nextInt();
 
-        for (int i = 0; i < length - 1; i++) {
-            if (arr[i] == n && arr[i + 1] == m || arr[i] == m && arr[i + 1] == n) {
-                flag = false;
-            }
-        }
-        System.out.println(flag);
     }
 }
 
