@@ -17,6 +17,13 @@ public class MatrixDemi {
 class Test {
 
     public static void toDo() {
+
+
+    }
+}
+class readFile {
+
+    public static void toDo() {
         String path = "src/su/bzz/study/hyperSkill/dataset_91022.txt";
         File file = new File(path);
         int[] numArray;
