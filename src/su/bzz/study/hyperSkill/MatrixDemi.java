@@ -1,27 +1,32 @@
 package su.bzz.study.hyperSkill;
 
-import java.util.Scanner;
+    import java.util.Scanner;
 
 public class MatrixDemi {
     public static void main(String[] args) {
-        FindFirstMax.toDo();
+        Test.toDo();
     }
 }
 // 22 min
 class Test {
     public static void toDo() {
         Scanner sc = new Scanner(System.in);
-        String string = sc.nextLine();
-        while (!"0".equals(string)) {
-            try {
-                System.out.println(Integer.parseInt(string) * 10);
-            } catch (RuntimeException e){
-                System.out.println("Invalid user input: " + string);
-            } finally {
-                string = sc.nextLine();
+        int length = sc.nextInt();
+        int[] arr = new int[length];
+        boolean flag = true;
+
+        for (int i = 0; i < length; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+
+        for (int i = 0; i < length - 1; i++) {
+            if (arr[i] == n && arr[i + 1] == m || arr[i] == m && arr[i + 1] == n) {
+                flag = false;
             }
         }
-
+        System.out.println(flag);
     }
 }
 
