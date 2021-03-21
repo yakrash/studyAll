@@ -1,3 +1,4 @@
+/*
 package su.bzz.study.skillBoxSound;
 
 import com.dropbox.core.v2.DbxClientV2;
@@ -7,10 +8,12 @@ import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+*/
 /**
  * A sample program is to demonstrate how to record sound in Java
  * author: www.codejava.net
- */
+ *//*
+
 public class JavaSoundRecorder {
     private DbxClientV2 client;
     private AudioFileFormat.Type fileType = AudioFileFormat.Type.WAVE;
@@ -100,4 +103,4 @@ public class JavaSoundRecorder {
         );
         return format;
     }
-}
+}*/

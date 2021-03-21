@@ -28,3 +28,4 @@ hs_err_pid*
 *.iml
 *.iws
 
+/src/su/bzz/study/hyperSkill/dataset_91022.txt
