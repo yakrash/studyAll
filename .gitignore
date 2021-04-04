@@ -29,3 +29,5 @@ hs_err_pid*
 *.iws
 
 /src/su/bzz/study/hyperSkill/dataset_91022.txt
+/out/
+/data.dat
