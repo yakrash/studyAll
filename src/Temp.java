@@ -9,7 +9,12 @@ import java.util.Calendar;
 public class Temp {
 
     public static void main(String[] args) {
+        double a = 5;
+        double b = 0;
+        int t = 0;
 
+    double d = (double) 5 / 0;
+        System.out.println(d);
 //
 //        String ACCESS_TOKEN = "sl.AkJtOEB57e3IqP28ZzfaW07UAcsKisYmFMs1r0yi3SrTj2hAxFcnqMMgp1benXPwBW8abMCXuqSV3xQ9_jvwE8VTw2TxuN4w5ZDLe4yT0uiotW34jdFp0RfCRUe40_6wZd-_6-8";
 //

@@ -30,6 +30,7 @@ class ReadFile {
         try (Scanner sc = new Scanner(file)) {
             while (sc.hasNext()) {
                 i += sc.nextInt();
+                sc.tokens();
             }
             /*numArray = Stream.of(sc.nextLine()
                     .split(" "))
